@@ -18,12 +18,17 @@ function closenav() {
 }
 var skills=document.getElementById("skills");
 var details=skills.querySelectorAll("i");
-console.log(details)
 for (i=0;i<details.length;i++){
     details[i].classList.add("fa-plus");
 }
 function showskills(elem) {
     var id=elem.id;
+    var det=document.querySelectorAll("#"+id+"skills"+" "+"p:nth-child(n)")
+    for (var i=0;i<det.length;i++){
+        console.log(det[i]);
+        det[i].style.transition=((i+1)/10)+"s ease"
+    }
+    console.log(det);
     if (document.getElementById(id).className == "fa fa-plus") {
         document.getElementById(id).className = "fa fa-times";
         document.getElementById(id+"skills").style.height = "100%";

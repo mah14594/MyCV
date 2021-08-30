@@ -81,7 +81,9 @@ body{
 .skills .details{
     height: 0;
     overflow-y:hidden;
-    transition: 0.01s ease;
+    transition: 1.5s ease;
     top:0;
     left:0;
+    color: black;
+    font-weight: 400;
 }
