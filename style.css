@@ -1,0 +1,87 @@
+body{
+    height: 100vh;
+    overflow-x:hidden;
+    transition: 0.5s ease;
+}
+.left-side{
+    position: fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:100%;
+    background-color: rgb(191, 196, 199);
+    background-color: rgba(0, 0, 0, 0.95); /* Black w/opacity */
+    text-align: center;
+    overflow-x: hidden;
+    transition: 0.5s ease;
+    height:100%;
+    z-index: 1;
+}
+.left-side img{
+    margin-top: 20px;
+    width:60%;
+    border-radius: 50%;     /*circle image*/
+}
+.left-side p{
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+
+}
+.left-side h3{
+    margin-top: 20px;
+    font-weight: 700;
+    color: rgb(0, 37, 250);
+}
+.left-side .fab{
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+}
+
+.left-side #close{
+    position:absolute;
+    top:1%;
+    right:3%;
+    font-size: 18px;
+    margin-left: 50px;
+    color:white;
+    
+}
+#main{
+    transition: 0.5s ease;
+    padding:16px;
+    overflow:hidden;
+    z-index: -1;
+}
+
+#open{
+    transition: 0.5s ease;
+}
+#main h2{
+    color:rgb(0, 37, 250);
+    font-weight: 900;
+    border-color: black;
+ 
+}
+.skills{
+    height:100vh;
+    scroll-behavior: smooth;
+}
+
+.skills .fas{
+    font-size: 12px;
+    transition: 0.5s ease;
+}
+
+
+.skills h5{
+    font-weight: 900;
+}
+.skills .details{
+    height: 0;
+    overflow-y:hidden;
+    transition: 0.01s ease;
+    top:0;
+    left:0;
+}

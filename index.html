@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Resume Template</title>
+    <!--icon -->
+    <link rel="icon" type="image/x-icon" />
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!--Animation library-->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="sidenav" class="left-side">
+        <a id="close" onclick="closenav()"><i class="fas fa-times"></i></a>
+        <img src="imgs/Capture.JPG">
+        <h3>Address</h3>
+        <p>Kufr-Zibad,Tulkarm,Palestine</p>
+        <h3>Date of Birth</h3>
+        <p>14<sup>th</sup> May 1994</p>
+        <h3>Email</h3>
+        <p>Alsalem.mahdi94@gmail.com</p>
+        <h3>Phone</h3>
+        <p>0595580244</p>
+
+        <h3>Visit me:</h3>
+        <div class="social mb-3 col-12  d-flex flex-row justify-content-center text-center">
+
+            <div><a href="https://www.facebook.com/mahdi.alsalem.35" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+            <div><a href="https://www.instagram.com/mahde_salem/" target="_blank"><i
+                        class="fab ml-3 fa-instagram"></i></div>
+            <div><a href="https://www.linkedin.com/in/mahdi-alsalem-8720a21ab/" target="_blank"><i class="fab fa-linkedin ml-3"></i></div>
+            <div><a href="https://github.com/mah14594" target="_blank"><i class="fab fa-github ml-3"></i>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <a id="open" onclick="opennav()"><i class="fas fa-bars"> <span>Basic info</span></i></a>
+        <h1 class="text-center mt-3" style="color: black">Mahdi Alsalem</h1>
+
+        <section class="work mt-5">
+            <h2 style="border-bottom: 2px solid;">Work Experience</h2>
+            <div class="d-flex  mt-3 flex-row justify-content-center justify-content-lg-between"
+                style="font-weight:900 ;">
+                <p class="col-9 col-md-8 col-lg-10">Birzeit University</p>
+                <p class="col-4 ">2019-present</p>
+            </div>
+            <p class="ml-2 ml-lg-5">
+                Working as teaching and research assistant</p>
+            <div class="d-flex  mt-3 flex-row justify-content-center justify-content-lg-between"
+                style="font-weight:900 ;">
+                <p class="col-9 col-md-8 col-lg-10">Alquds Lift co.</p>
+                <p class="col-4">2017-2019</p>
+            </div>
+            <p class="ml-2 ml-lg-5">
+                Worked as electrical Operation and maintance Engineer
+            </p>
+
+
+        </section>
+        <section class="edu mt-5">
+            <h2 style="border-bottom: 2px solid;">Education</h2>
+            <div class="d-flex  mt-3 flex-row justify-content-center justify-content-lg-between"
+                style="font-weight:900 ;">
+                <p class="col-9 col-md-8 col-lg-10 text-left">Electrical Engineer,Bachelor's degree </p>
+                <p class="col-4">2017</p>
+            </div>
+            <p class="ml-2 ml-lg-5"> At Birzeit univeristy , Ramallah,Palestine
+
+            </p>
+            <p class="ml-2 ml-lg-5"> with a very good GPA 79.9%</p>
+            <p style="font-weight: 700;" class="ml-2 ml-lg-5"> Graduation Project:</p>
+            <p class="ml-2 ml-lg-5"> Stone Gathering and Crushing Machine, a machine that dragged by agricultural
+                tractor to
+                collect the scattered stones from the land and return them back as a small pieces after crushing them.
+                This process leads to increase the permeability of the soil to water and decrease the conglomerate of
+                the soil when it is repeated multiple times.</p>
+            <div class="d-flex flex-row justify-content-center justify-content-lg-between" style="font-weight:900 ;">
+                <p class="col-9 col-md-8 col-lg-10">General Secondary Certificate Exam (Tawjihi), Scientific Stream.
+                </p>
+                <p class="col-4">2012</p>
+            </div>
+
+            <p class="ml-2 ml-lg-5"> At Kufr Zibad Secondary school , Tulkarm,Palestine
+            </p>
+            <p class="ml-2 ml-lg-5"> with an excelent Average 97.8%</p>
+
+        </section>
+        <section id="skills" class="skills mt-5" >
+            <h2 style="border-bottom: 2px solid;">Skills</h2>
+            <div class="container-fluid mt-3 p-2">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mt-3">
+                        <div style="border-bottom:1px solid" class="d-flex flex-row justify-content-between">
+                            <h5>Languages</h5>
+                            <a>
+                                <i id="lang" class="fa" onclick="showskills(this)"></i>
+                            </a>
+                        </div>
+                        <div class="details" id="langskills">
+                            <p>Arabic - Native language</p>
+                            <p>English - good in writing , speaking and reading</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-3">
+                        <div style="border-bottom:1px solid" class="d-flex flex-row justify-content-between">
+                            <h5>Projects</h5>
+                            <a>
+                                <i id="project" class="fa" onclick="showskills(this)"></i>
+                            </a>
+                        </div>
+                        <div class="details" id="projectskills">
+                            <p>Team work</p>
+                            <p>Time management</p>
+                            <p>Proplem Solving</p>
+                            <p>Self Learning</p>
+                            <p>Logical Thinking</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-3">
+                        <div style="border-bottom:1px solid" class="d-flex flex-row justify-content-between">
+                            <h5>Computer</h5>
+                            <a>
+                                <i id="computer" class="fa" onclick="showskills(this)"></i>
+                            </a>
+                        </div>
+                        <div class="details" id="computerskills">
+                            <p>Microsoft</p>
+                            <p>Matlab</p>
+                            <p>Autocad</p>
+                            <p>ETAP</p>
+                            <p>PCP Design</p>
+                            <p>Orcad</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-3">
+                        <div style="border-bottom:1px solid" class="d-flex flex-row justify-content-between">
+                            <h5>Coding</h5>
+                            <a>
+                                <i id="coding" class="fa" onclick="showskills(this)"></i>
+                            </a>
+                        </div>
+                        <div class="details" id="codingskills">
+                            <p>C</p>
+                            <p>Python</p>
+                            <p>HTML/HTML5</p>
+                            <p>CSS/CSS3</p>
+                            <p>Bootstrap</p>
+                            <p>JS/React</p>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-3">
+                        <div style="border-bottom:1px solid" class="d-flex flex-row justify-content-between">
+                            <h5>Others</h5>
+                            <a>
+                                <i id="other" class="fa"  onclick="showskills(this)"></i>
+                            </a>
+                        </div>
+                        <div class="details" id="otherskills">
+                            <p>Driving</p>
+                            <p>Playing different sports</p>
+                            <p>Readings</p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="test.js"></script>
+
+    <!-- End your project here-->
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>
