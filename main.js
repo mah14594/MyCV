@@ -23,7 +23,8 @@ for (i=0;i<details.length;i++){
 }
 function showskills(elem) {
     var id=elem.id;
-    var det=document.querySelectorAll("#"+id+"skills"+" "+"p:nth-child(n)")
+   //for loop to give a sequence of transition for the skills details 
+    var det=document.querySelectorAll("#"+id+"skills"+" "+"p:nth-child(n)") //select all p elements in this father
     for (var i=0;i<det.length;i++){
         console.log(det[i]);
         det[i].style.transition=((i+1)/10)+"s ease"
